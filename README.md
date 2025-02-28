@@ -70,14 +70,20 @@ http://localhost:8080/api/accounts
 
 🔗 API Endpoints
 
-| Method | Endpoint | Description |
-|--------|---------|-------------|
-| **POST** | `/api/accounts` | Create a new account |
-| **GET** | `/api/accounts/{id}` | Fetch a specific account |
-| **PUT** | `/api/accounts/{id}/deposit` | Deposit money into an account |
-| **PUT** | `/api/accounts/{id}/withdraw` | Withdraw money from an account |
-| **GET** | `/api/accounts` | Fetch all accounts |
-| **DELETE** | `/api/accounts/{id}` | Delete an account |
+
+| Method   | Endpoint                               | Description |
+|----------|---------------------------------------|-------------|
+| **POST**  | `/api/accounts`                      | Create a new account |
+| **GET**   | `/api/accounts/{id}`                 | Fetch a specific account |
+| **PUT**   | `/api/accounts/{id}/deposit`         | Deposit money into an account |
+| **PUT**   | `/api/accounts/{id}/withdraw`        | Withdraw money from an account |
+| **GET**   | `/api/accounts`                      | Fetch all accounts |
+| **DELETE**| `/api/accounts/{id}`                 | Delete an account |
+| **POST**  | `/api/accounts/transfer`             | Transfer money between accounts |
+| **POST**  | `/api/scheduled-payments`           | Schedule a payment |
+| **GET**   | `/api/scheduled-payments`           | Fetch all scheduled payments |
+| **GET**   | `/api/accounts/{id}/transactions`    | Get transactions for an account |
+| **GET**   | `/api/accounts/{accountId}/paginated` | Get paginated transactions |
 
 
 
