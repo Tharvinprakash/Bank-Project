@@ -59,4 +59,14 @@ public class AccountController {
         accountService.deleteAccount(id);
         return ResponseEntity.ok("Account is deleted successfully");
     }
+
+    @PostMapping("/transfer")
+    public ResponseEntity<String> transfer(@RequestBody Map<String,Object> request){
+        Long senderId = ((Number) request.get("senderId")).longValue();
+        Long receiverId = ((Number) request.get("receiverId")).longValue();
+        double amount = ((Number) request.get("amount")).doubleValue();
+
+        accountService.transfer(senderId,receiverId,amount);
+        return ResponseEntity.ok("Transfer successful");
+    }
 }

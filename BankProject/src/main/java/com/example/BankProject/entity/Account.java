@@ -14,15 +14,18 @@ public class Account {
     private String accountHolderName;
     private double balance;
 
+    @Column(unique=true,nullable=false)
+    private String email;
 
     public Account(){
 
     }
 
-    public Account(Long id, String accountHolderName, double balance) {
+    public Account(Long id, String accountHolderName, double balance,String email) {
         this.id = id;
         this.accountHolderName = accountHolderName;
         this.balance = balance;
+        this.email = email;
     }
 
     public Long getId() {
@@ -48,4 +51,13 @@ public class Account {
     public void setBalance(double balance) {
         this.balance = balance;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
 }
