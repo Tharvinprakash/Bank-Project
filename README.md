@@ -43,6 +43,7 @@ cd Bank-Project
 
 2️⃣ Configure MySQL Database in src/main/resources/application.properties:
 
+```properties
 
 spring.datasource.url=jdbc:mysql://localhost:3306/bank_db
 spring.datasource.username=root
@@ -55,7 +56,7 @@ spring.mail.password=your_email_password
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
 
-
+```
 
 3️⃣ Run the application:
 
