@@ -6,12 +6,12 @@ A bank account management system using Spring Boot, MySQL, and REST APIs.
 
 🚀 Features
 
-✅ Create, update, delete bank accounts
-✅ Deposit & Withdraw money
-✅ Transfer money between accounts
-✅ Scheduled payments processing
-✅ Transaction history with pagination & filtering
-✅ Email notifications for transactions 
+1. ✅ Create, update, delete bank accounts
+2. ✅ Deposit & Withdraw money
+3. ✅ Transfer money between accounts
+4. ✅ Scheduled payments processing
+5. ✅ Transaction history with pagination & filtering
+6. ✅ Email notifications for transactions 
 
 🛠️ Technologies Used
 
