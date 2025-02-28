@@ -6,7 +6,12 @@ A bank account management system using Spring Boot, MySQL, and REST APIs.
 
 🚀 Features
 
-✅ Create, update, delete bank accounts✅ Deposit & Withdraw money✅ Transfer money between accounts✅ Scheduled payments processing✅ Transaction history with pagination & filtering✅ Email notifications for transactions 
+✅ Create, update, delete bank accounts
+✅ Deposit & Withdraw money
+✅ Transfer money between accounts
+✅ Scheduled payments processing
+✅ Transaction history with pagination & filtering
+✅ Email notifications for transactions 
 
 🛠️ Technologies Used
 
@@ -54,107 +59,16 @@ mvn spring-boot:run
 http://localhost:8080/api/accounts
 
 
-## API Endpoints
-
 🔗 API Endpoints
 
-🔹 Account Management
-
-Method
-
-Endpoint
-
-Description
-
-POST
-
-/api/accounts
-
-Create a new account
-
-GET
-
-/api/accounts/{id}
-
-Fetch a specific account
-
-PUT
-
-/api/accounts/{id}/deposit
-
-Deposit money into an account
-
-PUT
-
-/api/accounts/{id}/withdraw
-
-Withdraw money from an account
-
-GET
-
-/api/accounts
-
-Fetch all accounts
-
-DELETE
-
-/api/accounts/{id}
-
-Delete an account
-
-🔹 Transactions
-
-Method
-
-Endpoint
-
-Description
-
-GET
-
-/api/accounts/{id}/transactions
-
-Fetch account transaction history
-
-GET
-
-/api/accounts/{id}/paginated
-
-Fetch paginated transaction history
-
-🔹 Fund Transfers
-
-Method
-
-Endpoint
-
-Description
-
-POST
-
-/api/accounts/transfer
-
-Transfer money between accounts
-
-🔹 Scheduled Payments
-
-Method
-
-Endpoint
-
-Description
-
-POST
-
-/api/scheduled-payments
-
-Schedule a future payment
-
-GET
-
-/api/scheduled-payments
-
-Fetch all scheduled payments
+| Method | Endpoint | Description |
+|--------|---------|-------------|
+| **POST** | `/api/accounts` | Create a new account |
+| **GET** | `/api/accounts/{id}` | Fetch a specific account |
+| **PUT** | `/api/accounts/{id}/deposit` | Deposit money into an account |
+| **PUT** | `/api/accounts/{id}/withdraw` | Withdraw money from an account |
+| **GET** | `/api/accounts` | Fetch all accounts |
+| **DELETE** | `/api/accounts/{id}` | Delete an account |
 
 📌 Example JSON Response
 
