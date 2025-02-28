@@ -13,6 +13,8 @@ A bank account management system using Spring Boot, MySQL, and REST APIs.
 5. ✅ Transaction history with pagination & filtering
 6. ✅ Email notifications for transactions 
 
+
+
 🛠️ Technologies Used
 
 Java 21
@@ -30,6 +32,7 @@ Spring Scheduler (for scheduled payments)
 Spring Mail (for email notifications)
 
 
+
 ⚙️ Setup & Installation
 
 1️⃣ Clone the repository:
@@ -37,7 +40,9 @@ Spring Mail (for email notifications)
 git clone https://github.com/Tharvinprakash/Bank-Project.git
 cd Bank-Project
 
+
 2️⃣ Configure MySQL Database in src/main/resources/application.properties:
+
 
 spring.datasource.url=jdbc:mysql://localhost:3306/bank_db
 spring.datasource.username=root
@@ -50,9 +55,12 @@ spring.mail.password=your_email_password
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
 
+
+
 3️⃣ Run the application:
 
 mvn spring-boot:run
+
 
 4️⃣ Access APIs via Postman or browser:
 
@@ -69,6 +77,8 @@ http://localhost:8080/api/accounts
 | **PUT** | `/api/accounts/{id}/withdraw` | Withdraw money from an account |
 | **GET** | `/api/accounts` | Fetch all accounts |
 | **DELETE** | `/api/accounts/{id}` | Delete an account |
+
+
 
 📌 Example JSON Response
 
